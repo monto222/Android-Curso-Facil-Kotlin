@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pruebas.kotlinDesdeCero.firstapp.FirstAppActivity"
+    tools:ignore="ExtraText">
+
+    <!--*********************************************************************
+    ********************EJERCICIO FRAME LAYOUT**************************
+    *********************************************************************
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|left"
+        android:background="#009688" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|center"
+        android:background="#4CAF50" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|right"
+        android:background="#CDDC39" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|left"
+        android:background="#673AB7" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|center"
+        android:background="#3F51B5" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|right"
+        android:background="#03A9F4" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|left"
+        android:background="#F44336" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center"
+        android:background="#FF5722" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+        android:background="#FF9800" />
+
+    *********************************************************************
+    ********************EJERCICIO LINEAR LAYOUT**************************
+    *********************************************************************
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#E6EE9C" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#B39DDB" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#9FA8DA" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#EF9A9A" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#81D4FA" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFCC80" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#90CAF9" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#80DEEA" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#80CBC4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#A5D6A7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/purple_200" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#C62828" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#AD1457" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4527A0" />
+        </LinearLayout>
+
+    </LinearLayout>
+    *********************************************************************
+    ********************EJERCICIO CONSTRAINT LAYOUT**************************
+    *******************HACER UN LOGIN DE USUARIO Y CONTRASEÑA***************
+
+    <View
+        android:id="@+id/Login"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <EditText
+        android:id="@+id/EditTextUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Escribe tu usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/EditTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Escribe tu contraseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextUser"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#7D7488"
+        android:hint="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextPassword"
+        app:layout_constraintVertical_bias="0.9" />
+
+    *********************************************************************
+    ********************EJERCICIO CONSTRAINT LAYOUT**************************
+    ********************ENTENDER LAS CADENAS "CHAIN"***********************
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/boton2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    app:layout_constraintHorizontal_chainStyle="spread_inside"
+    app:layout_constraintHorizontal_chainStyle="spread"
+    app:layout_constraintHorizontal_chainStyle="packed"
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/boton3"
+        app:layout_constraintStart_toEndOf="@id/boton1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/boton2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    *********************************************************************
+    ********************EJERCICIO CONSTRAINT LAYOUT**************************
+    ******************************GUIDE LINE****************************
+    Linea invisible que al coloco donde quiera para que las demás vistas se puedan enganchar a ella
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/botton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botton"
+        app:layout_constraintEnd_toStartOf="@+id/end"
+        app:layout_constraintStart_toStartOf="@+id/start"
+        app:layout_constraintTop_toTopOf="@+id/top"
+        android:text="Hola esto ocupa literalmente este tamaño"/>
+
+
+    app:layout_constraintGuide_begin="100dp"
+            app:layout_constraintGuide_end="100dp"-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
